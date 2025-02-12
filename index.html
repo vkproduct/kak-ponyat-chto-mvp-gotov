@@ -422,13 +422,13 @@
         </section>
 
         <!-- Советы по проверке технической готовности -->
-        <div class="w-full mb-12">
-            <div class="lifehacks-color rounded-xl shadow-sm p-8 relative overflow-hidden">
+        <div class="w-full mb-8 sm:mb-12">
+            <div class="lifehacks-color rounded-xl shadow-sm p-4 sm:p-6 md:p-8 relative overflow-hidden">
                 <!-- Декоративный градиентный фон -->
                 <div class="absolute inset-0 brand-gradient opacity-5"></div>
         
-                <div class="flex items-start space-x-6 relative">
-                    <div class="flex-shrink-0">
+                <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6 relative">
+                    <div class="flex-shrink-0 w-full sm:w-auto flex justify-center">
                         <div class="w-12 h-12 brand-gradient rounded-xl flex items-center justify-center shadow-lg">
                             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
@@ -437,14 +437,14 @@
                         </div>
                     </div>
                     <div class="flex-1">
-                        <div class="flex items-center space-x-2 mb-6">
-                            <h3 class="text-2xl font-semibold">Эффективные методы проверки технической готовности</h3>
+                        <div class="flex items-center space-x-2 mb-4 sm:mb-6">
+                            <h3 class="text-xl sm:text-2xl font-semibold">Эффективные методы проверки технической готовности</h3>
                         </div>
                         
-                        <div class="grid md:grid-cols-2 gap-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                             <div>
-                                <h4 class="text-lg font-medium text-gray-900 mb-3">Методы тестирования</h4>
-                                <ul class="space-y-3 text-gray-600">
+                                <h4 class="text-base sm:text-lg font-medium text-gray-900 mb-3">Методы тестирования</h4>
+                                <ul class="space-y-3 text-sm sm:text-base text-gray-600">
                                     <li class="flex items-start">
                                         <span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-3 mt-2"></span>
                                         <span>Начните с тестирования основного сценария использования в реальных условиях до проверки дополнительных функций</span>
@@ -460,8 +460,8 @@
                                 </ul>
                             </div>
                             <div>
-                                <h4 class="text-lg font-medium text-gray-900 mb-3">Оценка надёжности</h4>
-                                <ul class="space-y-3 text-gray-600">
+                                <h4 class="text-base sm:text-lg font-medium text-gray-900 mb-3">Оценка надёжности</h4>
+                                <ul class="space-y-3 text-sm sm:text-base text-gray-600">
                                     <li class="flex items-start">
                                         <span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-3 mt-2"></span>
                                         <span>Составьте список всех возможных точек отказа и проверьте каждую в отдельности</span>
@@ -478,16 +478,16 @@
                             </div>
                         </div>
                         
-                        <div class="mt-6 p-6 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-100">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mr-4">
+                        <div class="mt-6 p-4 sm:p-6 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-100">
+                            <div class="flex flex-col sm:flex-row items-start">
+                                <div class="flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
                                     <div class="w-8 h-8 brand-gradient rounded-lg flex items-center justify-center">
                                         <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                                         </svg>
                                     </div>
                                 </div>
-                                <p class="text-gray-600">
+                                <p class="text-sm sm:text-base text-gray-600">
                                     <span class="font-semibold text-gray-900">Лайфхак для всех типов MVP:</span> 
                                     Создайте "теневой запуск" - тестируйте продукт в реальных условиях, но без публичного анонса. Это позволит выявить проблемы в условиях реальной эксплуатации, но без риска для репутации. Начните с минимальной группы лояльных пользователей и постепенно расширяйте аудиторию.
                                 </p>
@@ -497,6 +497,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- Секция метрики успеха -->
         <section class="mb-12">
